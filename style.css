@@ -1,0 +1,41 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(21, 20, 20);
+  color: white;
+}
+
+.music-player {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.other-playlist{
+  margin: 10%;
+  border: 2px solid white;
+  padding: 12px;
+}
+.playlist1{
+  display: flex;
+}
+
+.ply1{
+  height: 50px;
+
+}
+.playlist1-img{
+  width: 120px;
+  margin-right: 7px; 
+}
+  
+.sb-text{
+  display: block;
+}

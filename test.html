@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+
+<audio id="musicPlayer" controls autoplay>
+    <source src="music/mix/song1.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const musicPlayer = document.getElementById('musicPlayer');
+    const songs = ['song1.mp3', 'song2.mp3', 'song3.mp3']; // Add more songs as needed
+    let currentSongIndex = 0;
+
+    musicPlayer.addEventListener('ended', playNextSong);
+
+    function playNextSong() {
+        currentSongIndex = (currentSongIndex + 1) % songs.length;
+        musicPlayer.src = `music/mix/${songs[currentSongIndex]}`;
+        musicPlayer.play();
+    }
+</script>
+
+</body>
+</html>

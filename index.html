@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="music-player">
+      <h1>MSplayer</h1>
+      <audio id="musicPlayer_ser" controls autoplay >
+        <source src="music/mix/song1.mp3" >
+      </audio>
+      <br>
+      <audio id="musicPlayer_aser" controls autoplay >
+        <source src="music/mix/song1.mp3" >
+      </audio>
+      <button class="rendon-button" onclick="playRandom()">Play Rendom</button>
+    </div>
+    <div class="other-playlist">
+      <div class="playlist1">
+        <div class="playlist1-img">
+        <img src="Sidhu-Moose-Wala-Wallpaper-HD-47232.jpg" alt="" class="ply1" >
+      </div>
+      <div class="playlist1-tittle"></div>
+        <p>Sidhu Moose Wala <br> </p>
+      </div>
+      <div class="playlist1-icons">
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
